@@ -1,0 +1,50 @@
+.property_card_container {
+  width: 300px;
+}
+.property_card_container > img {
+  height: 250px;
+  width: 300px;
+  border-radius: 16px;
+}
+.property_card_info {
+  display: flex;
+  padding: 10px 0;
+}
+.card_info_left {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.card_info_left > .property_title {
+  width: 80%;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+.card_info_left > .property_location {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--dark-gray);
+}
+.card_info_left > .property_price {
+  font-weight: 700;
+  font-size: 15px;
+  margin-top: 10px;
+}
+.card_info_right {
+  width: 20%;
+  text-align: end;
+  font-weight: 600;
+  font-size: 16px;
+}
+.property_ratings {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.property_ratings > span {
+  /* line-height: 0; */
+}

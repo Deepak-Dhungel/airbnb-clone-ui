@@ -1,0 +1,97 @@
+.MuiPaper-root {
+  border-radius: 12px !important;
+  /* overflow: hidden; */
+}
+
+.MuiDialogContent-root .css-c6uxrn-MuiDialogContent-root {
+  background-color: white;
+}
+.modal_header {
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+}
+.modal_title {
+  text-align: center;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 700;
+}
+.dialog_close_btn {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 50%;
+  padding: 6px;
+  cursor: pointer;
+  /* transition: 0.1s ease-in-out; */
+}
+.dialog_close_btn:hover {
+  background-color: rgba(128, 128, 128, 0.093);
+  border-radius: 50%;
+  line-height: 0;
+  padding: 6px;
+}
+.modal_login_form {
+  margin: 40px 0 20px 0;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form_title {
+  font-size: 26px;
+  font-weight: 700;
+  align-self: flex-start;
+}
+#filled-input-email {
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 8px 8px 0 0;
+}
+#filled-input-email:focus,
+#filled-input-password:focus-visible {
+  border: 2px solid var(--accent);
+}
+#filled-input-password {
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 0 0 8px 8px;
+}
+.css-1ff8729-MuiInputBase-root-MuiFilledInput-root:before {
+  border-bottom: none !important;
+}
+.css-1ff8729-MuiInputBase-root-MuiFilledInput-root:after {
+  border: none !important;
+}
+.submit_login_btn {
+  margin-top: 30px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: var(--accent);
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+}
+
+.login_with_google_btn {
+  margin-top: 20px;
+  border: 2px solid var(--dark-gray);
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 50px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}

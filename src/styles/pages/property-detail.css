@@ -1,0 +1,49 @@
+.single_property_container {
+  padding: 40px;
+}
+.property_gallery {
+  height: 350px;
+  border-radius: 16px;
+  display: flex;
+}
+
+.property_title {
+  font-size: 18px;
+  font-weight: 700;
+}
+.property_info {
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  gap: 20px;
+  margin-bottom: 6px;
+}
+.property_reviews {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.property_details,
+.property_description,
+.property_amenities {
+  width: 50%;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--gray);
+}
+.property_description {
+  font-size: 14px;
+  font-weight: 500;
+}
+.property_amenities,
+.amenities_title {
+  font-size: 16px;
+  font-weight: 700;
+}
+.amenity_item {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

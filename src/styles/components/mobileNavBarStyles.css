@@ -1,0 +1,12 @@
+.mobile_navbar_container
+
+
+.mobile_navbar_container,
+.MuiBottomNavigationAction-label {
+  font-size: 12px !important;
+}
+.mobile_navbar_container,
+.css-1bjk3jo-MuiButtonBase-root-MuiBottomNavigationAction-root.Mui-selected {
+  color: var(--accent) !important;
+}
+

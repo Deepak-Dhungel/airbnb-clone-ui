@@ -1,0 +1,28 @@
+.footer_container {
+  background-color: var(--bg-gray);
+  padding: 60px 40px 20px 40px;
+  /* position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0; */
+}
+.footer_upper {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  padding-bottom: 40px;
+}
+.footer_links > li {
+  list-style: none;
+  padding: 5px 0;
+}
+.footer_bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  border-top: 1px solid var(--gray);
+}
+.social_links {
+  display: flex;
+  gap: 10px;
+}

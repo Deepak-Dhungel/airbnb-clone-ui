@@ -1,0 +1,145 @@
+/* step one */
+
+.category-card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.category-card {
+  padding: 16px;
+  width: 200px;
+  border: 1px solid var(--gray);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.category-card:hover {
+  border: 2px solid var(--dark-gray);
+}
+/* ************************************************ */
+
+/* step two styles */
+
+.place-type-container {
+  margin-top: 80px;
+}
+.place-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ******************************************* */
+
+/* step 3 styles */
+
+/* step 4 styles */
+
+/* step 5 styles */
+
+/* step 6 styles  */
+
+.file-upload-wrapper {
+  background-color: var(--bg-gray);
+  margin-top: 50px;
+  width: 600px;
+  height: 200px;
+  border: 1px dashed #dddddd;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.add-photos-btn {
+  border: 1px solid var(--dark-gray);
+  border-radius: 4px;
+  padding: 6px;
+  cursor: pointer;
+}
+
+.photo-container {
+  margin: 40px 0;
+  border: 3px dashed var(--gray);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.photo-container > input {
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+}
+.photo-container > p {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.photo-container > label {
+  background-color: var(--dark);
+  padding: 15px 30px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  /* position: absolute; */
+  top: 50%;
+}
+
+.selected-photos {
+  display: flex;
+  gap: 20px;
+}
+.selected-photo-container {
+  position: relative;
+}
+
+.remove-selected-photo {
+  position: absolute;
+  right: 0;
+  background-color: var(--dark);
+  border-radius: 50%;
+  padding: 4px 5px 0 5px;
+  margin-top: -10px;
+  margin-right: -10px;
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.remove-selected-photo:hover {
+  transform: scale(1.2);
+}
+
+/* ************************************* */
+/* step 7 styles */
+
+/* publish button */
+.publish-button-container {
+  background: white;
+  padding: 20px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  border-top: 2px solid #ddd;
+}
+.publish-button-container .publish-btn {
+  padding: 15px 20px;
+  background-color: var(--dark);
+  color: white;
+  border-radius: 8px;
+  position: absolute;
+  right: 50px;
+  border: 2px solid var(--dark);
+  cursor: pointer;
+}

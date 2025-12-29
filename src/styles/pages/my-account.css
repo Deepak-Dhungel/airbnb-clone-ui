@@ -1,0 +1,39 @@
+.my_account_container {
+  padding: 80px;
+}
+.account_header .title {
+  font-size: 26px;
+  font-weight: 700;
+}
+.account_header .user_details {
+  font-size: 18px;
+  font-weight: 700;
+}
+.account_header .user_details > span {
+  font-weight: 500;
+}
+.account_cards_section {
+  display: flex;
+  justify-content: space-between;
+}
+.account_card {
+  margin-top: 50px;
+  width: 320px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px !important;
+  border-radius: 12px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.account_card .card_details {
+  display: flex;
+  flex-direction: column;
+}
+.account_card .card_details .title {
+  font-size: 16px;
+  font-weight: 700;
+}
+.account_card .card_details .desc {
+  color: var(--dark-gray);
+}
