@@ -4,10 +4,10 @@ import {
   onAuthStateChanged,
   signInWithPopup,
 } from "firebase/auth";
-import { createContext, useEffect, useState } from "react";
+import { createContext, useState } from "react";
 import { auth } from "../firebase.config";
 
-type ContextProviderType = {
+export type ContextProviderType = {
   children: React.ReactNode;
 };
 

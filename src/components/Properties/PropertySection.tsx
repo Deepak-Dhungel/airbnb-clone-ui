@@ -22,7 +22,7 @@ function PropertySection() {
         ...property.data(),
         id: property.id,
       }));
-      // console.log("all prop",allProperties);
+
       setProperties(allProperties);
       setPropertiesLoading(false);
     } catch (error) {
@@ -31,31 +31,79 @@ function PropertySection() {
   }
 
   return (
-    <div
-      style={{
-        padding: "40px",
-        display: "flex",
-        flexWrap: "wrap",
-        gap: "40px",
-      }}
-    >
-      {propertiesLoading ? (
-        <>
-          <PropertyCardSkeleton />
-          <PropertyCardSkeleton />
-          <PropertyCardSkeleton />
-          <PropertyCardSkeleton />
-          <PropertyCardSkeleton />
-          <PropertyCardSkeleton />
-          <PropertyCardSkeleton />
-          <PropertyCardSkeleton />
-        </>
-      ) : (
-        properties?.map((item: PropertyDetailsType, i: any) => {
-          return <PropertyCard item={item} key={i} />;
-        })
-      )}
-    </div>
+    <>
+      <div
+        style={{
+          padding: "40px",
+          display: "flex",
+          flexDirection: "column",
+          flexWrap: "wrap",
+          gap: "10px",
+        }}
+      >
+        <span style={{ fontSize: "20px", fontWeight: "700" }}>
+          Popular homes in New York
+        </span>
+
+        <div
+          style={{
+            display: "flex",
+            width: "100%",
+            flexWrap: "wrap",
+            gap: "20px",
+            justifyContent: "space-between",
+          }}
+        >
+          {propertiesLoading ? (
+            <>
+              {[1, 2, 3, 4, 5, 6, 7, 8].map((item) => (
+                <PropertyCardSkeleton key={item} />
+              ))}
+            </>
+          ) : (
+            properties?.map((item: PropertyDetailsType) => {
+              return <PropertyCard item={item} key={item.id} />;
+            })
+          )}
+        </div>
+
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            flexWrap: "wrap",
+            gap: "10px",
+            marginTop: "40px",
+          }}
+        >
+          <span style={{ fontSize: "20px", fontWeight: "700" }}>
+            Popular homes in Denver
+          </span>
+
+          <div
+            style={{
+              display: "flex",
+              width: "100%",
+              flexWrap: "wrap",
+              gap: "20px",
+              justifyContent: "space-between",
+            }}
+          >
+            {propertiesLoading ? (
+              <>
+                {[1, 2, 3, 4, 5, 6, 7, 8].map((item) => (
+                  <PropertyCardSkeleton key={item} />
+                ))}
+              </>
+            ) : (
+              properties?.map((item: PropertyDetailsType) => {
+                return <PropertyCard item={item} key={item.id} />;
+              })
+            )}
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
 
