@@ -1,0 +1,85 @@
+.container {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+}
+
+.card_title {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.booking_inputs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.dates {
+  display: flex;
+}
+
+.dates input {
+  width: 50%;
+  padding: 16px 8px;
+  border: 1px solid var(--dark-gray);
+  border-bottom: none;
+}
+.dates input:first-child {
+  border-right: none;
+  border-radius: 10px 0 0 0;
+}
+.dates input:last-child {
+  border-radius: 0 10px 0 0;
+}
+
+.guests_input {
+  border: 1px solid var(--dark-gray);
+  padding: 24px 8px;
+  border-radius: 0 0px 10px 10px;
+  position: relative;
+}
+
+.guests_input span {
+  position: absolute;
+}
+.guests_input span:first-child {
+  left: 8px;
+  top: 8px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+.guests_input span:nth-child(2) {
+  left: 8px;
+  top: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.down_icon {
+  right: 8px;
+  top: 60%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: var(--dark-gray);
+}
+
+.check_availability_btn {
+  margin-top: 16px;
+  width: 100%;
+  padding: 18px 12px;
+  font-weight: 600;
+  border-radius: 26px;
+  background-color: var(--accent-dark);
+  color: white;
+  border: none;
+  font-size: 16px;
+}
+.check_availability_btn:hover {
+  background-color: var(--accent);
+}

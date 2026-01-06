@@ -10,28 +10,26 @@ type PropertyCardType = {
 };
 
 function PropertyCard({ item }: PropertyCardType) {
-  
-
   return (
     <Link to={`property/${item.id}`} className="property_card_container">
       <img src={item.images[0]} alt="property" />
       <div className="property_card_info">
         <div className="card_info_left">
           <span className="property_title">{item.generalInfo.title}</span>
-          <span className="property_location">
+          {/* <span className="property_location">
             <IoLocationSharp size={16} />
             {item.location}
-          </span>
+          </span> */}
           <span className="property_price">
-            Rs. {item.generalInfo.price} / Night
+            $ {item.generalInfo.price} / Night
           </span>
         </div>
-        <div className="card_info_right">
+        {/* <div className="card_info_right">
           <div className="property_ratings">
             <AiFillStar />
             4.5
           </div>
-        </div>
+        </div> */}
       </div>
     </Link>
   );

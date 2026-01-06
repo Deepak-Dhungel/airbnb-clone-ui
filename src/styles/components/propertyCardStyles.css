@@ -1,9 +1,9 @@
 .property_card_container {
-  width: 300px;
+  width: 250px;
 }
 .property_card_container > img {
-  height: 250px;
-  width: 300px;
+  height: 200px;
+  width: 100%;
   border-radius: 16px;
 }
 .property_card_info {
@@ -11,15 +11,14 @@
   padding: 10px 0;
 }
 .card_info_left {
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
 .card_info_left > .property_title {
   width: 80%;
   font-weight: 700;
-  font-size: 16px;
-  margin-bottom: 4px;
+  font-size: 14px;
 }
 .card_info_left > .property_location {
   display: flex;
@@ -31,8 +30,9 @@
 }
 .card_info_left > .property_price {
   font-weight: 700;
-  font-size: 15px;
-  margin-top: 10px;
+  font-size: 14px;
+
+  color: var(--dark-gray);
 }
 .card_info_right {
   width: 20%;

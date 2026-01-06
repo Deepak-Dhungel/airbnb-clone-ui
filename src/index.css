@@ -15,6 +15,7 @@ code {
 
 :root {
   --accent: #ff385c;
+  --accent-dark: #e41d54;
   --dark: #222;
   --gray: #ddd;
   --dark-gray: #717171;
